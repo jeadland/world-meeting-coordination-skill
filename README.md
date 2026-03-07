@@ -28,31 +28,24 @@ Optional flags:
 - `--step` slot step in minutes (default: `60`)
 - `--top` number of results per category (default: `3`)
 
-## Repository workflow (Josh standard)
-
-This project follows a two-lane workflow:
+## Repository workflow
 
 - **Development source (git):**
   - `/home/pi/.openclaw/workspace/projects/world-meeting-coordination-skill`
-- **Polished runtime copy (apps):**
-  - `/home/pi/.openclaw/workspace/apps/world-meeting-coordination-prod/skills/world-meeting-coordination-skill`
+- **Skill path during development:**
+  - `/home/pi/.openclaw/workspace/skills/world-meeting-coordination-skill` (symlink)
 
-`/home/pi/.openclaw/workspace/skills/world-meeting-coordination-skill` is a symlink to the development source, so the skill stays discoverable during development.
+This project is intentionally **not mirrored into `apps/`**.
+Release/install validation should happen via ClawHub installation path.
 
-## Publish + runtime sync
+## Publish
 
-Use the helper script after changes:
+After changes, run smoke test, then publish a version:
 
 ```bash
-./scripts/publish_sync.sh
+./tests/test_smoke.sh
+clawhub publish . --slug world-meeting-coordination-skill --name "World Meeting Coordination Skill" --version <x.y.z> --changelog "..."
 ```
-
-It will:
-
-1. run a smoke test,
-2. sync files to `apps/world-meeting-coordination-prod`,
-3. push git changes,
-4. optionally remind you to publish a new ClawHub version.
 
 ## Smoke test
 
