@@ -15,6 +15,14 @@ Rank cross-timezone meeting windows as **Optimal**, **Stretch**, and **Avoid** w
 
 ## Usage
 
+### Natural-language prompt examples
+
+- "Find the best meeting windows for Chicago, London, and Tel Aviv on March 6, anchored to Chicago time. Return Optimal, Stretch, and Avoid windows with reasons."
+- "Find overlap windows for San Francisco, New York, and Berlin on 2026-04-12 in Pacific time, 60-minute meetings."
+- "Give me top 3 windows for Chicago, Paris, and Singapore tomorrow in Chicago time, with +1 day markers where needed."
+
+### CLI example
+
 ```bash
 python3 scripts/meeting_windows.py \
   --date 2026-03-06 \

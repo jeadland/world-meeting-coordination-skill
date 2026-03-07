@@ -15,6 +15,24 @@ Compute ranked meeting windows for multiple timezones.
 - Optional duration in minutes (default: 60)
 - Optional preferred window per participant (default: 08:00-18:00 local)
 
+## Example prompts
+
+Use prompts like these in chat:
+
+- "Find the best meeting windows for Chicago, London, and Tel Aviv on March 6, anchored to Chicago time. Return Optimal, Stretch, and Avoid windows with reasons."
+- "Find overlap windows for San Francisco, New York, and Berlin on 2026-04-12 in Pacific time, 60-minute meetings."
+- "Give me top 3 windows for Chicago, Paris, and Singapore tomorrow in Chicago time, with +1 day markers where needed."
+- "For Tokyo, London, and Chicago on 2026-10-28, show only Optimal and Stretch windows."
+
+Structured CLI equivalent:
+
+```bash
+python3 scripts/meeting_windows.py \
+  --date 2026-03-06 \
+  --anchor America/Chicago \
+  --zones "Chicago=America/Chicago,London=Europe/London,Tel Aviv=Asia/Jerusalem"
+```
+
 ## Execution
 
 Run:
