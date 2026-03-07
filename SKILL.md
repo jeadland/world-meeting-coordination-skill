@@ -1,5 +1,5 @@
 ---
-name: meeting-windows
+name: world-meeting-coordination-skill
 description: Compute best cross-timezone meeting windows with DST-safe conversion and ranked categories (Optimal, Stretch, Avoid). Use when user asks for overlap windows across 2+ cities/timezones on a given date, wants output anchored to one timezone, or asks for readable Telegram-ready scheduling output with 24h + 12h times and +1 day markers.
 ---
 
