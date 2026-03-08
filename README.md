@@ -15,6 +15,19 @@ Rank cross-timezone meeting windows as **Optimal**, **Stretch**, and **Avoid** w
 
 ## Usage
 
+### First-time onboarding (automatic on first interactive run)
+
+On first interactive run, the skill asks 3 questions and stores config at:
+
+`~/.openclaw/skills/world-meeting-coordination-skill/config.json`
+
+Manual commands:
+
+```bash
+python3 scripts/meeting_windows.py --setup
+python3 scripts/meeting_windows.py --show-settings
+```
+
 ### Natural-language prompt examples
 
 - "Find the best meeting windows for Chicago, London, and Tel Aviv on March 6, anchored to Chicago time. Return Optimal, Stretch, and Avoid windows with reasons."

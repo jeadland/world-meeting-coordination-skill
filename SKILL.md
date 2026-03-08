@@ -16,6 +16,21 @@ Compute ranked meeting windows for multiple timezones.
 - Optional preferred window per participant (default: 08:00-18:00 local)
 - Optional user-specific hours via `--my-hours` (even if others unknown)
 
+## Onboarding and settings
+
+First run in an interactive terminal triggers onboarding automatically (3 questions):
+
+1. your timezone
+2. your preferred meeting hours
+3. your flexibility (`strict|balanced|flexible`)
+
+At any time:
+
+```bash
+python3 scripts/meeting_windows.py --setup
+python3 scripts/meeting_windows.py --show-settings
+```
+
 ## Example prompts
 
 Use prompts like these in chat:
