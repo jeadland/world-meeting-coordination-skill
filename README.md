@@ -1,6 +1,6 @@
 # World Meeting Coordination Skill
 
-Rank cross-timezone meeting windows as **Optimal**, **Stretch**, and **Avoid** with Telegram-friendly output formatting.
+Find and rank cross-timezone meeting windows as **Optimal**, **Stretch**, and **Avoid** with Telegram-friendly output formatting.
 
 ## What it does
 
