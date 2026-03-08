@@ -24,6 +24,19 @@ First run in an interactive terminal triggers onboarding automatically (3 questi
 2. your preferred meeting hours
 3. your flexibility (`strict|balanced|flexible`)
 
+Canonical setup phrase in chat:
+
+- `Run world meeting skill setup`
+
+Intent triggers that should also map to setup/settings flow:
+
+- "set up meeting skill"
+- "configure world meeting"
+- "update my meeting hours"
+- "set my scheduling preferences"
+- "change my timezone for meeting windows"
+- "show my meeting settings"
+
 At any time:
 
 ```bash

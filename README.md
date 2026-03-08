@@ -28,6 +28,21 @@ python3 scripts/meeting_windows.py --setup
 python3 scripts/meeting_windows.py --show-settings
 ```
 
+### Chat setup phrase + intent matching
+
+Canonical phrase:
+
+- `Run world meeting skill setup`
+
+Also treat these as setup/settings intent:
+
+- "set up meeting skill"
+- "configure world meeting"
+- "update my meeting hours"
+- "set my scheduling preferences"
+- "change my timezone for meeting windows"
+- "show my meeting settings"
+
 ### Natural-language prompt examples
 
 - "Find the best meeting windows for Chicago, London, and Tel Aviv on March 6, anchored to Chicago time. Return Optimal, Stretch, and Avoid windows with reasons."
