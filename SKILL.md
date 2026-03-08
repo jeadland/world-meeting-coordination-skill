@@ -14,6 +14,7 @@ Compute ranked meeting windows for multiple timezones.
 - Cities/timezones list (IANA tz names preferred)
 - Optional duration in minutes (default: 60)
 - Optional preferred window per participant (default: 08:00-18:00 local)
+- Optional user-specific hours via `--my-hours` (even if others unknown)
 
 ## Example prompts
 
@@ -31,6 +32,18 @@ python3 scripts/meeting_windows.py \
   --date 2026-03-06 \
   --anchor America/Chicago \
   --zones "Chicago=America/Chicago,London=Europe/London,Tel Aviv=Asia/Jerusalem"
+```
+
+If only your hours are known, add:
+
+```bash
+--my-name Chicago --my-hours "09:00-17:00"
+```
+
+Or set multiple participant hours:
+
+```bash
+--hours "Chicago=09:00-17:00,London=08:30-17:30"
 ```
 
 ## Execution

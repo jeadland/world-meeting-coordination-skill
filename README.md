@@ -35,6 +35,19 @@ Optional flags:
 - `--duration` meeting length in minutes (default: `60`)
 - `--step` slot step in minutes (default: `60`)
 - `--top` number of results per category (default: `3`)
+- `--my-name` participant name key to apply personal hours to
+- `--my-hours` personal preferred hours (e.g. `09:00-17:00`)
+- `--hours` per-participant hours map (e.g. `Chicago=09:00-17:00,London=08:30-17:30`)
+
+Example with only your hours known:
+
+```bash
+python3 scripts/meeting_windows.py \
+  --date 2026-03-10 \
+  --anchor America/Chicago \
+  --zones "Chicago=America/Chicago,London=Europe/London,Bangalore=Asia/Kolkata" \
+  --my-name Chicago --my-hours "09:00-17:00"
+```
 
 ## Repository workflow
 
